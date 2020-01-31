@@ -1,12 +1,20 @@
 import React from 'react';
-import Navigation from './components/Navigation'
-import './App.css'
-// Write imports for Router & BrowserRouter here //
+import logo from './logo.svg';
+import './App.css';
+import Navigation from "./components/Navigation";
+import Router from "./Router";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Navigation />
+    <div className="App">
+  <BrowserRouter>
+      <Navigation />
+      <Router />
+    </BrowserRouter>
+    </div>
+    // render:(react.ReactNode)
+   
   );
 }
-
-export default App;
+export default App
