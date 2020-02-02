@@ -10,7 +10,7 @@ const Car = (props) => {
     console.log(props)
     var car = cars.find(car =>car.id==props.match.params.id)
     return (
-    //    <h1>{car.Name}</h1>
+    // <h1>Car</h1>
     <Container>
         <Paper>
             <h1>{car.Name}</h1>
@@ -19,14 +19,14 @@ const Car = (props) => {
           <Chip label = {`Miles_per_Gallon: ${car.Miles_per_Gallon}`}></Chip>
           <Chip label = {`Cylinders: ${car.Cylinders}`}></Chip>
           <Chip label = {`Displacement: ${car.Displacement}`}></Chip> 
-          <Chip label = {`Horsepowe: ${car.Horsepowe}`}></Chip>
+          <Chip label = {`Horsepower: ${car.Horsepower}`}></Chip>
           <Chip label = {`Weight_in_lbs: ${car.Weight_in_lbs}`}></Chip>
           <Chip label = {`Acceleration: ${car.Acceleration}`}></Chip> 
           <Chip label = {`Year: ${car.Year}`}></Chip>
-          <Chip label = {`Origin: ${car.Origin}`}></Chip>
+          <Chip label = {`Origin: ${car.origin}`}></Chip>
         </Paper>
     </Container> 
     )
 }
-//
+
 export default Car
