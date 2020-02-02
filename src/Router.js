@@ -8,7 +8,7 @@ import Car from './components/Car'
 
 // Write checkAuth function here
 // Check the cookies for a cookie called "loggedIn"
-
+//
 
 // Write ProtectedRoute function here
 
